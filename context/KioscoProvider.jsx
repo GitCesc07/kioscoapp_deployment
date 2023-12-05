@@ -23,7 +23,7 @@ const pedidoLocalStorage = typeof window !== 'undefined' ? JSON.parse(localStora
     const router = useRouter()
 
     const obtenerCategorias = async () => {
-        const {data} = await axios('/api/Categorias')
+        const {data} = await axios('/api/Categoria')
 
         setCategorias(data)
     }
